@@ -5,6 +5,7 @@ import ShopsSection from './shopsSection/ShopsSection';
 import ShopsItem from './shopsItem/ShopsItem';
 import ShopsMenu from './shopsMenu/shopsMenuMcDonny/ShopsMenuMcDonny';
 import ShopsMenuMcDonny from './shopsMenu/shopsMenuMcDonny/ShopsMenuMcDonny';
+import ShopsMenuCFS from './shopsMenu/shopsMenuCFS/ShopsMenuCFS';
 import MenuItem from './menuItem/MenuItem';
 
 export {
@@ -16,4 +17,5 @@ export {
   ShopsMenu,
   ShopsMenuMcDonny,
   MenuItem,
+  ShopsMenuCFS,
 };

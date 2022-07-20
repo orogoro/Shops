@@ -3,6 +3,9 @@ import { lazy, Suspense } from 'react';
 import { Navigation, Loader } from './shops';
 
 const Shops = lazy(() => import('../pages/shops/Shops'));
+const ShopsMenuCFS = lazy(() =>
+  import('./shops/shopsMenu/shopsMenuCFS/ShopsMenuCFS')
+);
 const ShopsMenuMcDonny = lazy(() =>
   import('./shops/shopsMenu/shopsMenuMcDonny/ShopsMenuMcDonny')
 );
@@ -12,17 +15,19 @@ export const App = () => {
   return (
     <>
       <Navigation />
+      <div>
+        <Suspense fallback={<Loader />}>
+          <Routes>
+            <Route path="/Shops" element={<Shops />}>
+              <Route path="McDonny" element={<ShopsMenuMcDonny />} />
+              <Route path="CFS" element={<ShopsMenuCFS />} />
+            </Route>
+            <Route path="Shopping_cart" element={<ShoppingCart />} />
 
-      <Suspense fallback={<Loader />}>
-        <Routes>
-          <Route path="/" element={<Shops />}>
-            <Route path="McDonny" element={<ShopsMenuMcDonny />} />
-          </Route>
-          <Route path="Shopping_cart" element={<ShoppingCart />} />
-
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-      </Suspense>
+            <Route path="*" element={<Navigate to="/Shops" />} />
+          </Routes>
+        </Suspense>
+      </div>
     </>
   );
 };

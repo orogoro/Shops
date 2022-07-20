@@ -4,7 +4,7 @@ import styles from './ShopsItem.module.scss';
 
 function ShopsItem({ link, name }) {
   return (
-    <li>
+    <li className={styles.item}>
       <NavLink
         to={link}
         className={({ isActive }) =>

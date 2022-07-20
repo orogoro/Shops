@@ -8,7 +8,7 @@ function Navigation() {
       <nav className={styles.nav}>
         <div>
           <NavLink
-            to="/"
+            to="/Shops"
             className={({ isActive }) =>
               [styles.link, isActive ? styles.active : null]
                 .filter(Boolean)

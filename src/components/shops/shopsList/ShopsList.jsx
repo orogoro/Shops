@@ -8,7 +8,7 @@ function ShopsList() {
       <h2 className={styles.title}> Shops :</h2>
       <ul className={styles.list}>
         <ShopsItem link={'McDonny'} name={'Mc Donny'} />
-        <ShopsItem link={'/Donny'} name={'Donny'} />
+        <ShopsItem link={'CFS'} name={'CFS'} />
       </ul>
     </div>
   );

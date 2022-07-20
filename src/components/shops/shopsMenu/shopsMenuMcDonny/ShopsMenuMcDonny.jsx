@@ -1,5 +1,4 @@
 import { MenuItem } from '../..';
-
 import styles from '../ShopsMenu.module.scss';
 
 function ShopsMenu_McDonny() {

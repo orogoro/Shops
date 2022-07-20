@@ -1,15 +1,8 @@
-import SyncLoader from 'react-spinners/SyncLoader';
+import HashLoader from 'react-spinners/HashLoader';
 import styles from './Loader.module.scss';
 
 function Loader() {
-  return (
-    <SyncLoader
-      className={styles.loader}
-      color="black"
-      // loading={loading}
-      size={15}
-    />
-  );
+  return <HashLoader className={styles.loader} color="black" size={70} />;
 }
 
 export default Loader;
