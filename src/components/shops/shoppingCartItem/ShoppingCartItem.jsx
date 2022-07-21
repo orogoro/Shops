@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux';
 import Notiflix from 'notiflix';
 import * as action from '../../../redux/actions';
 
-import food from '../../../image/balanced-diet.png';
 import cross from '../../../image/cross.png';
 
 import styles from './ShoppingCartItem.module.scss';
