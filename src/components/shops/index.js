@@ -7,6 +7,10 @@ import ShopsMenu from './shopsMenu/shopsMenuMcDonny/ShopsMenuMcDonny';
 import ShopsMenuMcDonny from './shopsMenu/shopsMenuMcDonny/ShopsMenuMcDonny';
 import ShopsMenuCFS from './shopsMenu/shopsMenuCFS/ShopsMenuCFS';
 import MenuItem from './menuItem/MenuItem';
+import ShoppingCartSection from './shoppingCartSection/ShoppingCartSection';
+import ShoppingCartForm from './shoppingCartForm/ShoppingCartForm';
+import ShoppingCartList from './shoppingCartList/ShoppingCartList';
+import ShoppingCartItem from './shoppingCartItem/ShoppingCartItem';
 
 export {
   Loader,
@@ -18,4 +22,8 @@ export {
   ShopsMenuMcDonny,
   MenuItem,
   ShopsMenuCFS,
+  ShoppingCartSection,
+  ShoppingCartForm,
+  ShoppingCartList,
+  ShoppingCartItem,
 };

@@ -15,19 +15,17 @@ export const App = () => {
   return (
     <>
       <Navigation />
-      <div>
-        <Suspense fallback={<Loader />}>
-          <Routes>
-            <Route path="/Shops" element={<Shops />}>
-              <Route path="McDonny" element={<ShopsMenuMcDonny />} />
-              <Route path="CFS" element={<ShopsMenuCFS />} />
-            </Route>
-            <Route path="Shopping_cart" element={<ShoppingCart />} />
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/Shops" element={<Shops />}>
+            <Route path="McDonny" element={<ShopsMenuMcDonny />} />
+            <Route path="CFS" element={<ShopsMenuCFS />} />
+          </Route>
+          <Route path="Shopping_cart" element={<ShoppingCart />} />
 
-            <Route path="*" element={<Navigate to="/Shops" />} />
-          </Routes>
-        </Suspense>
-      </div>
+          <Route path="*" element={<Navigate to="/Shops" />} />
+        </Routes>
+      </Suspense>
     </>
   );
 };
