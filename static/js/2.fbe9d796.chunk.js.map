@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/2.fbe9d796.chunk.js","mappings":"sJAIA,UAJA,WACE,OAAO","sources":["pages/shoppingCart/ShoppingCart.jsx"],"sourcesContent":["function ShoppingCart() {\n  return <div>ShoppingCart</div>;\n}\n\nexport default ShoppingCart;\n"],"names":[],"sourceRoot":""}

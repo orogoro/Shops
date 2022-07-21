@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[2],{2:function(e,t,r){r.r(t);var a=r(184);t.default=function(){return(0,a.jsx)("div",{children:"ShoppingCart"})}}}]);
-//# sourceMappingURL=2.fbe9d796.chunk.js.map
