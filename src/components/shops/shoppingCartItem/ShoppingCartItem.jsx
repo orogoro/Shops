@@ -1,20 +1,20 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import Notiflix from 'notiflix';
-import * as action from '../../../redux/actions';
 
+import * as action from '../../../redux/actions';
 import cross from '../../../image/cross.png';
 
 import styles from './ShoppingCartItem.module.scss';
-import { useEffect } from 'react';
 
-function ShoppingCartItem({ name, price, id, amount, src }) {
+function ShoppingCartItem({ name, price, id, counter, src }) {
   const [totalPrice, setTotalPrice] = useState(price);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    setTotalPrice(price * amount);
-  }, [amount, price]);
+    setTotalPrice(price * counter);
+  }, [counter, price]);
 
   return (
     <>
@@ -32,7 +32,7 @@ function ShoppingCartItem({ name, price, id, amount, src }) {
           >
             -
           </button>
-          <p className={styles.p}>{amount}</p>
+          <p className={styles.p}>{counter}</p>
           <button
             className={styles.btn}
             type="button"
@@ -58,3 +58,11 @@ function ShoppingCartItem({ name, price, id, amount, src }) {
 }
 
 export default ShoppingCartItem;
+
+ShoppingCartItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  counter: PropTypes.number.isRequired,
+  src: PropTypes.string.isRequired,
+};

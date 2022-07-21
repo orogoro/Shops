@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import styles from './ShopsItem.module.scss';
 
@@ -20,3 +21,8 @@ function ShopsItem({ link, name }) {
 }
 
 export default ShopsItem;
+
+ShopsItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+};

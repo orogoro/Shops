@@ -16,7 +16,6 @@ import { ShoppingCartReducer } from './reducers';
 const persistConfig = {
   key: 'shops',
   storage,
-  //   whitelist: ['token'],
 };
 
 const middleware = [

@@ -17,7 +17,7 @@ function ShoppingCartList() {
                 name={name}
                 price={price}
                 id={id}
-                amount={counter}
+                counter={counter}
                 src={src}
               />
             </li>

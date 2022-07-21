@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import Notiflix from 'notiflix';
 
 import * as action from '../../../redux/actions';
@@ -27,3 +28,9 @@ function MenuItem({ name, price, src }) {
 }
 
 export default MenuItem;
+
+MenuItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+};
