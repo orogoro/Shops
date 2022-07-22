@@ -7,6 +7,7 @@ import {
   decrement,
   orders,
   clearCart,
+  show,
 } from './actions';
 
 const cartReducer = createReducer([], {
@@ -43,9 +44,14 @@ const ordersReducer = createReducer([], {
   [orders]: (state, { payload }) => [payload, ...state],
 });
 
+const showReducer = createReducer(false, {
+  [show]: (_, { payload }) => payload,
+});
+
 const ShoppingCartReducer = combineReducers({
   cart: cartReducer,
   orders: ordersReducer,
+  show: showReducer,
 });
 
 export { ShoppingCartReducer };

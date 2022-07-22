@@ -27,5 +27,6 @@ const deleteFood = createAction('shops/delete');
 const clearCart = createAction('shops/clear');
 const increment = createAction('shops/increment');
 const decrement = createAction('shops/decrement');
+const show = createAction('shops/show');
 
-export { addFood, deleteFood, increment, decrement, orders, clearCart };
+export { addFood, deleteFood, increment, decrement, orders, clearCart, show };

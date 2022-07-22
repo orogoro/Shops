@@ -14,14 +14,23 @@
 }
 
 .img {
-  width: 280px;
+  width: 260px;
 }
 
 .name {
   font-size: 20px;
   font-weight: 500;
-  margin: 10px 0;
+  margin: 20px 0 10px;
   margin-right: auto;
+
+  & + & {
+    margin: 10px 0;
+    margin-right: auto;
+  }
+}
+
+.span {
+  font-weight: 700;
 }
 
 .button {
@@ -39,6 +48,14 @@
   //   box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
   transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+
+  &:disabled {
+    background-color: #a3d9ff;
+
+    &:hover {
+      background-color: #a3d9ff;
+    }
+  }
 
   &:hover {
     background-color: #1867de;

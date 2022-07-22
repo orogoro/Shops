@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 950px;
+}
+
+.li {
+  display: flex;
+  width: 200px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #ebf2f7;
+}
+
+.img {
+  width: 70px;
+}
+
+.text_container {
+  margin-left: 20px;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.total {
+  margin-right: 100px;
+  font-size: 25px;
+  font-weight: 600;
+}

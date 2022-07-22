@@ -9,6 +9,7 @@ function ShopsList() {
       <ul className={styles.list}>
         <ShopsItem link={'McDonny'} name={'Mc Donny'} />
         <ShopsItem link={'CFS'} name={'CFS'} />
+        <ShopsItem link={'Dziodzi'} name={'Dziodzi'} />
       </ul>
     </div>
   );

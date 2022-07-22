@@ -22,7 +22,7 @@ function ShoppingCartItem({ name, price, id, counter, src }) {
       <div className={styles.container}>
         <p className={styles.name}>{name}</p>
         <p>
-          Price : <span className={styles.span}>{totalPrice}</span> $
+          Price: <span className={styles.span}>{totalPrice}</span> $
         </p>
         <div className={styles.btn_container}>
           <button
