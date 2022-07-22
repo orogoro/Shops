@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './HistoryFilter.module.scss';
 
 function HistoryFilter({ onChange, phone, email }) {
@@ -33,3 +35,9 @@ function HistoryFilter({ onChange, phone, email }) {
 }
 
 export default HistoryFilter;
+
+HistoryFilter.propTypes = {
+  onChange: PropTypes.func.isRequired,
+  phone: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+};

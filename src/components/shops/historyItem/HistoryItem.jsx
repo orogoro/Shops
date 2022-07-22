@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './HistoryItem.module.scss';
 
 function HistoryItem({ cart, totalPrice }) {
@@ -21,3 +23,16 @@ function HistoryItem({ cart, totalPrice }) {
 }
 
 export default HistoryItem;
+
+HistoryItem.propTypes = {
+  cart: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      src: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      price: PropTypes.string.isRequired,
+      counter: PropTypes.number.isRequired,
+    })
+  ),
+  totalPrice: PropTypes.number.isRequired,
+};
