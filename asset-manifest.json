@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Shops/static/css/main.bf0303d0.css",
-    "main.js": "/Shops/static/js/main.9ca1b09f.js",
-    "static/js/781.0820ab5d.chunk.js": "/Shops/static/js/781.0820ab5d.chunk.js",
-    "static/js/2.99ac19ff.chunk.js": "/Shops/static/js/2.99ac19ff.chunk.js",
-    "static/js/881.162fde1b.chunk.js": "/Shops/static/js/881.162fde1b.chunk.js",
+    "main.css": "/Shops/static/css/main.17586e20.css",
+    "main.js": "/Shops/static/js/main.8955e1d8.js",
+    "static/js/781.c80353f7.chunk.js": "/Shops/static/js/781.c80353f7.chunk.js",
+    "static/js/2.5cadb6eb.chunk.js": "/Shops/static/js/2.5cadb6eb.chunk.js",
+    "static/js/881.299c0d09.chunk.js": "/Shops/static/js/881.299c0d09.chunk.js",
     "static/media/bibimbap.png": "/Shops/static/media/bibimbap.fd3564c902c8595174ca.png",
     "static/media/ramenNaruto.png": "/Shops/static/media/ramenNaruto.de10de0dfc7fa83db22f.png",
     "static/media/thai-food-min.png": "/Shops/static/media/thai-food-min.24bef9494de4043e4808.png",
@@ -14,15 +14,16 @@
     "static/media/order.png": "/Shops/static/media/order.f02d6997387a9eb4faf3.png",
     "static/media/taco.png": "/Shops/static/media/taco.3c5340b8ee2b75aa327a.png",
     "static/media/combo.png": "/Shops/static/media/combo.01df23b6c26b85d6ac99.png",
+    "static/media/leaf.png": "/Shops/static/media/leaf.dd645a719ffe31ff4b59.png",
     "index.html": "/Shops/index.html",
-    "main.bf0303d0.css.map": "/Shops/static/css/main.bf0303d0.css.map",
-    "main.9ca1b09f.js.map": "/Shops/static/js/main.9ca1b09f.js.map",
-    "781.0820ab5d.chunk.js.map": "/Shops/static/js/781.0820ab5d.chunk.js.map",
-    "2.99ac19ff.chunk.js.map": "/Shops/static/js/2.99ac19ff.chunk.js.map",
-    "881.162fde1b.chunk.js.map": "/Shops/static/js/881.162fde1b.chunk.js.map"
+    "main.17586e20.css.map": "/Shops/static/css/main.17586e20.css.map",
+    "main.8955e1d8.js.map": "/Shops/static/js/main.8955e1d8.js.map",
+    "781.c80353f7.chunk.js.map": "/Shops/static/js/781.c80353f7.chunk.js.map",
+    "2.5cadb6eb.chunk.js.map": "/Shops/static/js/2.5cadb6eb.chunk.js.map",
+    "881.299c0d09.chunk.js.map": "/Shops/static/js/881.299c0d09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf0303d0.css",
-    "static/js/main.9ca1b09f.js"
+    "static/css/main.17586e20.css",
+    "static/js/main.8955e1d8.js"
   ]
 }

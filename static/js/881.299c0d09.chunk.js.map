@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/881.299c0d09.chunk.js","mappings":"sKAUA,UARA,WACE,OACE,2BACE,SAAC,KAAD","sources":["pages/history/History.jsx"],"sourcesContent":["import { HistorySection } from '../../components/shops';\n\nfunction History() {\n  return (\n    <main>\n      <HistorySection />\n    </main>\n  );\n}\n\nexport default History;\n"],"names":[],"sourceRoot":""}
