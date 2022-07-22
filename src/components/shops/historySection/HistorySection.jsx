@@ -4,6 +4,8 @@ import { useSelector } from 'react-redux';
 import { getOrdersItems } from 'redux/selectors';
 import { HistoryFilter, HistoryList } from '..';
 
+import leaf from '../../../image/leaf.png';
+
 import styles from './HistorySection.module.scss';
 
 function HistorySection() {
@@ -50,7 +52,14 @@ function HistorySection() {
   return (
     <div className={styles.container}>
       <HistoryFilter onChange={onChangeFilter} phone={phone} email={email} />
-      <HistoryList orders={getVisibleHistoryOrders} />
+      {getVisibleHistoryOrders.length !== 0 ? (
+        <HistoryList orders={getVisibleHistoryOrders} />
+      ) : (
+        <div className={styles.leaf_container}>
+          <p className={styles.text}>Orders not found</p>
+          <img className={styles.img} src={leaf} alt="leaf" />
+        </div>
+      )}
     </div>
   );
 }
