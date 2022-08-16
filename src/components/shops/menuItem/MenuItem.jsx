@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import Notiflix from 'notiflix';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import * as action from '../../../redux/actions';
 
@@ -16,14 +17,16 @@ function MenuItem({ name, price, src }) {
 
     setTimeout(() => {
       dispatch(action.addFood({ name, price, src }));
-      Notiflix.Notify.success('Added to cart');
+      toast.success('Added to cart', {
+        theme: 'colored',
+      });
       setDisable(false);
     }, 500);
   };
 
   return (
-    <li className={styles.container}>
-      <img className={styles.img} src={src} alt="food" />
+    <>
+      <img className={styles.img} src={src} alt={name} />
       <p className={styles.name}>
         <span className={styles.span}>{name}</span>
       </p>
@@ -37,7 +40,7 @@ function MenuItem({ name, price, src }) {
       >
         Add to Cart
       </button>
-    </li>
+    </>
   );
 }
 

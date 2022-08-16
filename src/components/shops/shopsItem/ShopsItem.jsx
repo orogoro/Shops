@@ -9,19 +9,15 @@ import styles from './ShopsItem.module.scss';
 function ShopsItem({ link, name }) {
   const dispatch = useDispatch();
   return (
-    <li className={styles.item}>
-      <NavLink
-        to={link}
-        className={({ isActive }) =>
-          [styles.link, isActive ? styles.active : null]
-            .filter(Boolean)
-            .join(' ')
-        }
-        onClick={() => dispatch(action.show(true))}
-      >
-        {name}
-      </NavLink>
-    </li>
+    <NavLink
+      to={`Shops/${link}`}
+      className={({ isActive }) =>
+        [styles.link, isActive ? styles.active : null].filter(Boolean).join(' ')
+      }
+      onClick={() => dispatch(action.show(true))}
+    >
+      {name}
+    </NavLink>
   );
 }
 

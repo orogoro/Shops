@@ -1,19 +1,13 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { Navigation, Loader } from './shops';
+import { ToastContainer } from 'react-toastify';
 
 const Shops = lazy(() => import('../pages/shops/Shops'));
-const ShopsMenuCFS = lazy(() =>
-  import('./shops/shopsMenu/shopsMenuCFS/ShopsMenuCFS')
-);
-const ShopsMenuMcDonny = lazy(() =>
-  import('./shops/shopsMenu/shopsMenuMcDonny/ShopsMenuMcDonny')
-);
-const ShopsMenuDziodzi = lazy(() =>
-  import('./shops/shopsMenu/shopsMenuDziodzi/ShopsMenuDziodzi')
-);
 const ShoppingCart = lazy(() => import('../pages/shoppingCart/ShoppingCart'));
 const History = lazy(() => import('../pages/history/History'));
+const Home = lazy(() => import('../pages/homePage/HomePage'));
+const ShopsMenu = lazy(() => import('./shops/shopsMenu/ShopsMenu'));
 
 export const App = () => {
   return (
@@ -21,17 +15,27 @@ export const App = () => {
       <Navigation />
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path="/Shops" element={<Shops />}>
-            <Route path="McDonny" element={<ShopsMenuMcDonny />} />
-            <Route path="CFS" element={<ShopsMenuCFS />} />
-            <Route path="Dziodzi" element={<ShopsMenuDziodzi />} />
+          <Route path="/" element={<Home />} />
+          <Route path="Shops" element={<Shops />}>
+            <Route path="Shops/:itemId" element={<ShopsMenu />} />
           </Route>
           <Route path="Shopping_cart" element={<ShoppingCart />} />
           <Route path="History" element={<History />} />
 
-          <Route path="*" element={<Navigate to="/Shops" />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Suspense>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable
+        pauseOnHover={false}
+      />
     </>
   );
 };

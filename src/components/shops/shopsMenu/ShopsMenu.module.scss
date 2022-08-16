@@ -11,3 +11,18 @@
   flex-wrap: wrap;
   list-style: none;
 }
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 10px 30px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 10px;
+
+  &:nth-child(2n) {
+    margin-left: auto;
+  }
+}

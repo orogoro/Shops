@@ -11,7 +11,18 @@ function Navigation() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <div>
+        <div className={styles.container}>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              [styles.link, isActive ? styles.active : null]
+                .filter(Boolean)
+                .join(' ')
+            }
+            onClick={() => dispatch(action.show(false))}
+          >
+            Home
+          </NavLink>
           <NavLink
             to="/Shops"
             className={({ isActive }) =>
@@ -23,16 +34,18 @@ function Navigation() {
           >
             Shops
           </NavLink>
+        </div>
+        <div className={styles.container}>
           <NavLink
             to="/Shopping_cart"
             className={({ isActive }) =>
-              [styles.link, isActive ? styles.active : null]
+              [styles.link, isActive ? styles.active2 : null]
                 .filter(Boolean)
                 .join(' ')
             }
             onClick={() => dispatch(action.show(false))}
           >
-            Shopping cart
+            <div className={styles.img}></div>
           </NavLink>
           <NavLink
             to="/History"

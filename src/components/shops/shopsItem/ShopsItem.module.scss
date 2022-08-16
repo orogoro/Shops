@@ -1,15 +1,8 @@
-.item {
-  & + & {
-    margin-top: 15px;
-  }
-}
-
 .link {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 100px;
   padding: 20px 45px;
   background-color: #fff;
   text-decoration: none;

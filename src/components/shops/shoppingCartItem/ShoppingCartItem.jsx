@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import Notiflix from 'notiflix';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import * as action from '../../../redux/actions';
 import cross from '../../../image/cross.png';
@@ -49,7 +50,9 @@ function ShoppingCartItem({ name, price, id, counter, src }) {
           alt="cross"
           onClick={() => {
             dispatch(action.deleteFood(id));
-            Notiflix.Notify.success('Successfully removed');
+            toast.success('Successfully removed', {
+              theme: 'colored',
+            });
           }}
         />
       </button>

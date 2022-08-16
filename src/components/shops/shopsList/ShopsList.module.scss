@@ -19,3 +19,9 @@
 .list {
   list-style: none;
 }
+
+.item {
+  & + & {
+    margin-top: 15px;
+  }
+}
