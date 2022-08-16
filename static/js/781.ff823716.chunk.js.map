@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/781.ff823716.chunk.js","mappings":"qKAUA,UARA,WACE,OACE,2BACE,SAAC,KAAD","sources":["pages/shops/Shops.jsx"],"sourcesContent":["import { ShopsSection } from '../../components/shops';\n\nfunction Shops() {\n  return (\n    <main>\n      <ShopsSection />\n    </main>\n  );\n}\n\nexport default Shops;\n"],"names":[],"sourceRoot":""}

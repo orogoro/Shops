@@ -1,29 +1,37 @@
 {
   "files": {
-    "main.css": "/Shops/static/css/main.17586e20.css",
-    "main.js": "/Shops/static/js/main.8955e1d8.js",
-    "static/js/781.c80353f7.chunk.js": "/Shops/static/js/781.c80353f7.chunk.js",
-    "static/js/2.5cadb6eb.chunk.js": "/Shops/static/js/2.5cadb6eb.chunk.js",
-    "static/js/881.299c0d09.chunk.js": "/Shops/static/js/881.299c0d09.chunk.js",
+    "main.css": "/Shops/static/css/main.ed5524c9.css",
+    "main.js": "/Shops/static/js/main.51656844.js",
+    "static/js/781.ff823716.chunk.js": "/Shops/static/js/781.ff823716.chunk.js",
+    "static/js/2.38cb5048.chunk.js": "/Shops/static/js/2.38cb5048.chunk.js",
+    "static/js/881.cb4ee561.chunk.js": "/Shops/static/js/881.cb4ee561.chunk.js",
+    "static/js/910.493b69ad.chunk.js": "/Shops/static/js/910.493b69ad.chunk.js",
+    "static/css/542.1c92a46a.chunk.css": "/Shops/static/css/542.1c92a46a.chunk.css",
+    "static/js/542.c7e66022.chunk.js": "/Shops/static/js/542.c7e66022.chunk.js",
+    "static/media/place1.jpeg": "/Shops/static/media/place1.d8a0d820d1a1c6d2608b.jpeg",
+    "static/media/food.jpg": "/Shops/static/media/food.2ff3c8e70a0b0df04da0.jpg",
+    "static/media/insta.jpg": "/Shops/static/media/insta.af71d709bb95c23c4859.jpg",
+    "static/media/dr.jpg": "/Shops/static/media/dr.23f9cb3af309758f5da2.jpg",
     "static/media/bibimbap.png": "/Shops/static/media/bibimbap.fd3564c902c8595174ca.png",
     "static/media/ramenNaruto.png": "/Shops/static/media/ramenNaruto.de10de0dfc7fa83db22f.png",
-    "static/media/thai-food-min.png": "/Shops/static/media/thai-food-min.24bef9494de4043e4808.png",
-    "static/media/combo_breakfast.png": "/Shops/static/media/combo_breakfast.44d0f646cd776c42bbc9.png",
-    "static/media/combo_dinner.png": "/Shops/static/media/combo_dinner.462a9327993261a1bfc5.png",
     "static/media/salad.png": "/Shops/static/media/salad.06fe0906af5ee4cb0ae7.png",
     "static/media/order.png": "/Shops/static/media/order.f02d6997387a9eb4faf3.png",
     "static/media/taco.png": "/Shops/static/media/taco.3c5340b8ee2b75aa327a.png",
-    "static/media/combo.png": "/Shops/static/media/combo.01df23b6c26b85d6ac99.png",
     "static/media/leaf.png": "/Shops/static/media/leaf.dd645a719ffe31ff4b59.png",
+    "static/media/icon-shopping-cart2.svg": "/Shops/static/media/icon-shopping-cart2.df571048a7209a39983a.svg",
+    "static/media/icon-shopping-cart.svg": "/Shops/static/media/icon-shopping-cart.c2af3717826b26c476f4.svg",
     "index.html": "/Shops/index.html",
-    "main.17586e20.css.map": "/Shops/static/css/main.17586e20.css.map",
-    "main.8955e1d8.js.map": "/Shops/static/js/main.8955e1d8.js.map",
-    "781.c80353f7.chunk.js.map": "/Shops/static/js/781.c80353f7.chunk.js.map",
-    "2.5cadb6eb.chunk.js.map": "/Shops/static/js/2.5cadb6eb.chunk.js.map",
-    "881.299c0d09.chunk.js.map": "/Shops/static/js/881.299c0d09.chunk.js.map"
+    "main.ed5524c9.css.map": "/Shops/static/css/main.ed5524c9.css.map",
+    "main.51656844.js.map": "/Shops/static/js/main.51656844.js.map",
+    "781.ff823716.chunk.js.map": "/Shops/static/js/781.ff823716.chunk.js.map",
+    "2.38cb5048.chunk.js.map": "/Shops/static/js/2.38cb5048.chunk.js.map",
+    "881.cb4ee561.chunk.js.map": "/Shops/static/js/881.cb4ee561.chunk.js.map",
+    "910.493b69ad.chunk.js.map": "/Shops/static/js/910.493b69ad.chunk.js.map",
+    "542.1c92a46a.chunk.css.map": "/Shops/static/css/542.1c92a46a.chunk.css.map",
+    "542.c7e66022.chunk.js.map": "/Shops/static/js/542.c7e66022.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17586e20.css",
-    "static/js/main.8955e1d8.js"
+    "static/css/main.ed5524c9.css",
+    "static/js/main.51656844.js"
   ]
 }
