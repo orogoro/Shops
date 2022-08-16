@@ -1,26 +1,12 @@
-import { useState } from 'react';
-// import { useSelector, useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
-// import Notiflix from 'notiflix';
-
-// import { getCartsItems } from 'redux/selectors';
-// import * as action from '../../../redux/actions';
 
 import styles from './ShoppingCartForm.module.scss';
 
 function ShoppingCartForm({ onSubmit, total }) {
-  // const [name, setName] = useState('');
-  // const [tel, setTel] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [address, setAddress] = useState('');
-  // const items = useSelector(getCartsItems);
-  // const dispatch = useDispatch();
-
   const {
     register,
     handleSubmit,
     reset,
-    // watch,
     formState: { errors },
   } = useForm({
     // defaultValues: {
@@ -28,62 +14,11 @@ function ShoppingCartForm({ onSubmit, total }) {
     // },
   });
 
-  // const name = watch('name');
-  // const email = watch('email');
-  // const tel = watch('phone');
-  // const address = watch('position');
-
-  // const total = items
-  //   .map(item => item.price * item.counter)
-  //   .reduce((acc, item) => acc + item, 0);
-
   const handleSubmitForm = ({ name, tel, email, address }) => {
     onSubmit(name, tel, email, address);
 
     reset();
   };
-
-  // const onSubmitForm = e => {
-  //   e.preventDefault();
-
-  //   dispatch(action.orders({ items, total, name, tel, email, address }));
-  //   Notiflix.Report.success(
-  //     'Success',
-  //     'Thank you for your order, we will contact you shortly.',
-  //     'Ok'
-  //   );
-
-  //   dispatch(action.clearCart([]));
-  //   setName('');
-  //   setTel('');
-  //   setEmail('');
-  //   setAddress('');
-  // };
-
-  // const handleInputChange = e => {
-  //   const { name, value } = e.target;
-
-  //   switch (name) {
-  //     case 'name':
-  //       setName(value);
-  //       break;
-
-  //     case 'tel':
-  //       setTel(value);
-  //       break;
-
-  //     case 'email':
-  //       setEmail(value);
-  //       break;
-
-  //     case 'address':
-  //       setAddress(value);
-  //       break;
-
-  //     default:
-  //       return;
-  //   }
-  // };
 
   return (
     <div className={styles.conainer}>
