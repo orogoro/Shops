@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import * as action from 'redux/actions';
+import * as action from 'redux/slice';
 
 import { MenuItem } from '../';
 import menuItems from '../../../helper/shops.json';

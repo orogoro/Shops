@@ -14,6 +14,7 @@ import HistoryList from './historyList/HistoryList';
 import HistoryItem from './historyItem/HistoryItem';
 import Home from './home/Home';
 import HomeItem from './home/slider/sliderItem/SliderItem';
+import SpinerBtn from './spinerBtn/SpinerBtn';
 
 export {
   Loader,
@@ -32,4 +33,5 @@ export {
   HistoryItem,
   Home,
   HomeItem,
+  SpinerBtn,
 };

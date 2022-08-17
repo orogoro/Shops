@@ -11,7 +11,7 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import { ShoppingCartReducer } from './reducers';
+import shopSlice from './slice';
 
 const persistConfig = {
   key: 'shops',
@@ -29,7 +29,7 @@ const middleware = [
 ];
 const store = configureStore({
   reducer: {
-    shops: persistReducer(persistConfig, ShoppingCartReducer),
+    shops: persistReducer(persistConfig, shopSlice),
   },
   middleware,
   devTools: process.env.NODE_ENV === 'development',

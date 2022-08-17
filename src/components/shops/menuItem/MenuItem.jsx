@@ -1,26 +1,36 @@
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import { nanoid } from 'nanoid';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { SpinerBtn } from '..';
 
-import * as action from '../../../redux/actions';
+import * as action from '../../../redux/slice';
 
 import styles from './MenuItem.module.scss';
-import { useState } from 'react';
 
 function MenuItem({ name, price, src }) {
-  const [disable, setDisable] = useState(false);
+  const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
 
   const handleSubmit = () => {
-    setDisable(true);
+    setLoading(true);
+
+    const newFood = {
+      id: nanoid(),
+      name,
+      price,
+      src,
+      counter: 1,
+    };
 
     setTimeout(() => {
-      dispatch(action.addFood({ name, price, src }));
+      dispatch(action.addFood(newFood));
       toast.success('Added to cart', {
         theme: 'colored',
       });
-      setDisable(false);
+      setLoading(false);
     }, 500);
   };
 
@@ -32,13 +42,8 @@ function MenuItem({ name, price, src }) {
       </p>
       <p className={styles.name}>Price: {price}$ </p>
 
-      <button
-        className={styles.button}
-        type="button"
-        onClick={handleSubmit}
-        disabled={disable}
-      >
-        Add to Cart
+      <button className={styles.button} type="button" onClick={handleSubmit}>
+        {loading ? <SpinerBtn color={'white'} size={10} /> : 'Add to Cart'}
       </button>
     </>
   );

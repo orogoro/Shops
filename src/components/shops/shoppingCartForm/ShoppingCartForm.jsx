@@ -1,8 +1,11 @@
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
+
+import { SpinerBtn } from '..';
 
 import styles from './ShoppingCartForm.module.scss';
 
-function ShoppingCartForm({ onSubmit, total }) {
+function ShoppingCartForm({ onSubmit, total, loading, items }) {
   const {
     register,
     handleSubmit,
@@ -15,9 +18,14 @@ function ShoppingCartForm({ onSubmit, total }) {
   });
 
   const handleSubmitForm = ({ name, tel, email, address }) => {
-    onSubmit(name, tel, email, address);
+    if (items.length === 0) {
+      toast.error('Сart is empty', {
+        theme: 'colored',
+      });
+      return;
+    }
 
-    reset();
+    onSubmit(name, tel, email, address, reset);
   };
 
   return (
@@ -120,7 +128,7 @@ function ShoppingCartForm({ onSubmit, total }) {
           </div>
 
           <button className={styles.button} type="submit">
-            Submit
+            {loading ? <SpinerBtn color={'white'} size={10} /> : 'Submit'}
           </button>
         </form>
       </div>

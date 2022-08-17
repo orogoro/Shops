@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import * as action from '../../../redux/actions';
+import * as action from 'redux/slice';
 import cross from '../../../image/cross.png';
 
 import styles from './ShoppingCartItem.module.scss';
@@ -29,7 +29,9 @@ function ShoppingCartItem({ name, price, id, counter, src }) {
           <button
             className={styles.btn}
             type="button"
-            onClick={() => dispatch(action.decrement(id))}
+            onClick={() =>
+              counter > 1 && dispatch(action.setCount({ id, step: -1 }))
+            }
           >
             -
           </button>
@@ -37,7 +39,7 @@ function ShoppingCartItem({ name, price, id, counter, src }) {
           <button
             className={styles.btn}
             type="button"
-            onClick={() => dispatch(action.increment(id))}
+            onClick={() => dispatch(action.setCount({ id, step: 1 }))}
           >
             +
           </button>

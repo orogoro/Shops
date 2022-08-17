@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
-import * as action from 'redux/actions';
+import * as action from 'redux/slice';
 
 import styles from './Navigation.module.scss';
 

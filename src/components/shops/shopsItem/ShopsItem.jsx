@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import * as action from 'redux/actions';
+import * as action from 'redux/slice';
 
 import styles from './ShopsItem.module.scss';
 
