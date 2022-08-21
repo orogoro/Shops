@@ -16,7 +16,7 @@ import shopSlice from './slice';
 const persistConfig = {
   key: 'shops',
   storage,
-  blacklist: ['show'],
+  blacklist: ['popular'],
 };
 
 const middleware = [

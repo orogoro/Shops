@@ -12,9 +12,9 @@ function ShoppingCartForm({ onSubmit, total, loading, items }) {
     reset,
     formState: { errors },
   } = useForm({
-    // defaultValues: {
-    // phone: '+380',
-    // },
+    defaultValues: {
+      tel: '+380',
+    },
   });
 
   const handleSubmitForm = ({ name, tel, email, address }) => {
@@ -100,7 +100,7 @@ function ShoppingCartForm({ onSubmit, total, loading, items }) {
               placeholder="Your number"
             />
             <p className={errors.tel ? styles.error : styles.form_phone}>
-              +38 (XXX) XXX - XX - XX
+              +38 XXX XXX XX XX
             </p>
           </div>
 

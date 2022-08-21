@@ -1,9 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+import popularAccept from '../helper/popular.json';
+
 const initialState = {
   cart: [],
   orders: [],
-  show: false,
+  popular: [...popularAccept],
 };
 
 export const shopSlice = createSlice({
@@ -31,9 +33,6 @@ export const shopSlice = createSlice({
     },
     orders: (state, { payload }) => {
       state.orders = [payload, ...state.orders];
-    },
-    show: (state, { payload }) => {
-      state.show = payload;
     },
   },
 });

@@ -1,13 +1,9 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-
-import * as action from 'redux/slice';
 
 import styles from './Navigation.module.scss';
 
 function Navigation() {
-  const dispatch = useDispatch();
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -19,7 +15,6 @@ function Navigation() {
                 .filter(Boolean)
                 .join(' ')
             }
-            onClick={() => dispatch(action.show(false))}
           >
             Home
           </NavLink>
@@ -30,7 +25,6 @@ function Navigation() {
                 .filter(Boolean)
                 .join(' ')
             }
-            onClick={() => dispatch(action.show(false))}
           >
             Shops
           </NavLink>
@@ -43,7 +37,6 @@ function Navigation() {
                 .filter(Boolean)
                 .join(' ')
             }
-            onClick={() => dispatch(action.show(false))}
           >
             <div className={styles.img}></div>
           </NavLink>
@@ -54,7 +47,6 @@ function Navigation() {
                 .filter(Boolean)
                 .join(' ')
             }
-            onClick={() => dispatch(action.show(false))}
           >
             History
           </NavLink>

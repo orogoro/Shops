@@ -1,7 +1,5 @@
-import { useDispatch } from 'react-redux';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import * as action from 'redux/slice';
 
 import { MenuItem } from '../';
 import menuItems from '../../../helper/shops.json';
@@ -11,9 +9,6 @@ import styles from './ShopsMenu.module.scss';
 function ShopsMenu() {
   const { itemId } = useParams();
   const [item, setItem] = useState(null);
-  const dispatch = useDispatch();
-
-  dispatch(action.show(true));
 
   useEffect(() => {
     const itemsMenu = menuItems.filter(item => {
