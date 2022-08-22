@@ -1,4 +1,4 @@
-import { Slider, SliderCard, Benefits, Footer } from './';
+import { Slider, SliderCard, Benefits, Footer, ScrollToTop } from './';
 
 import wave1 from '../../../image/wave1.svg';
 import wave2 from '../../../image/wave2.svg';
@@ -7,7 +7,7 @@ import styles from './Home.module.scss';
 
 function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Slider />
       <div className={styles.reletiveConteiner}>
         <SliderCard />
@@ -18,7 +18,8 @@ function Home() {
         <img className={styles.img2} src={wave2} alt="wave2" />
       </div>
       <Footer />
-    </div>
+      <ScrollToTop />
+    </>
   );
 }
 
