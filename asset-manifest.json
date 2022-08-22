@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Shops/static/css/main.232c1320.css",
-    "main.js": "/Shops/static/js/main.cfc2f17f.js",
-    "static/js/781.36bcb238.chunk.js": "/Shops/static/js/781.36bcb238.chunk.js",
-    "static/js/2.54ffb236.chunk.js": "/Shops/static/js/2.54ffb236.chunk.js",
-    "static/js/881.ff176193.chunk.js": "/Shops/static/js/881.ff176193.chunk.js",
-    "static/js/910.25828232.chunk.js": "/Shops/static/js/910.25828232.chunk.js",
+    "main.css": "/Shops/static/css/main.991d08d2.css",
+    "main.js": "/Shops/static/js/main.b1a7881a.js",
+    "static/js/781.16b04d33.chunk.js": "/Shops/static/js/781.16b04d33.chunk.js",
+    "static/js/2.2f916564.chunk.js": "/Shops/static/js/2.2f916564.chunk.js",
+    "static/js/881.3b8c454d.chunk.js": "/Shops/static/js/881.3b8c454d.chunk.js",
+    "static/js/910.0d78ee35.chunk.js": "/Shops/static/js/910.0d78ee35.chunk.js",
     "static/css/542.1c92a46a.chunk.css": "/Shops/static/css/542.1c92a46a.chunk.css",
-    "static/js/542.09fd32fc.chunk.js": "/Shops/static/js/542.09fd32fc.chunk.js",
+    "static/js/542.9f7e5032.chunk.js": "/Shops/static/js/542.9f7e5032.chunk.js",
     "static/media/place1.jpeg": "/Shops/static/media/place1.d8a0d820d1a1c6d2608b.jpeg",
     "static/media/food.jpg": "/Shops/static/media/food.2ff3c8e70a0b0df04da0.jpg",
     "static/media/insta.jpg": "/Shops/static/media/insta.af71d709bb95c23c4859.jpg",
@@ -16,6 +16,7 @@
     "static/media/restaurants.png": "/Shops/static/media/restaurants.189818a6860eb5f094db.png",
     "static/media/mobile.png": "/Shops/static/media/mobile.1c7113facd22850ddc9b.png",
     "static/media/logo.png": "/Shops/static/media/logo.17e5cb984343d1346ebd.png",
+    "static/media/arrowUp.png": "/Shops/static/media/arrowUp.13fe1b1b9aba6657358e.png",
     "static/media/leaf.png": "/Shops/static/media/leaf.dd645a719ffe31ff4b59.png",
     "static/media/githubIcon.svg": "/Shops/static/media/githubIcon.d855048009e0e718a234007d046773a5.svg",
     "static/media/icon-shopping-cart2.svg": "/Shops/static/media/icon-shopping-cart2.df571048a7209a39983a.svg",
@@ -24,17 +25,17 @@
     "index.html": "/Shops/index.html",
     "static/media/wave1.svg": "/Shops/static/media/wave1.86b0c6644de2d2ac1e258c24ebb457e5.svg",
     "static/media/wave2.svg": "/Shops/static/media/wave2.0be45ba5b5cee34eed4426c0493c9e52.svg",
-    "main.232c1320.css.map": "/Shops/static/css/main.232c1320.css.map",
-    "main.cfc2f17f.js.map": "/Shops/static/js/main.cfc2f17f.js.map",
-    "781.36bcb238.chunk.js.map": "/Shops/static/js/781.36bcb238.chunk.js.map",
-    "2.54ffb236.chunk.js.map": "/Shops/static/js/2.54ffb236.chunk.js.map",
-    "881.ff176193.chunk.js.map": "/Shops/static/js/881.ff176193.chunk.js.map",
-    "910.25828232.chunk.js.map": "/Shops/static/js/910.25828232.chunk.js.map",
+    "main.991d08d2.css.map": "/Shops/static/css/main.991d08d2.css.map",
+    "main.b1a7881a.js.map": "/Shops/static/js/main.b1a7881a.js.map",
+    "781.16b04d33.chunk.js.map": "/Shops/static/js/781.16b04d33.chunk.js.map",
+    "2.2f916564.chunk.js.map": "/Shops/static/js/2.2f916564.chunk.js.map",
+    "881.3b8c454d.chunk.js.map": "/Shops/static/js/881.3b8c454d.chunk.js.map",
+    "910.0d78ee35.chunk.js.map": "/Shops/static/js/910.0d78ee35.chunk.js.map",
     "542.1c92a46a.chunk.css.map": "/Shops/static/css/542.1c92a46a.chunk.css.map",
-    "542.09fd32fc.chunk.js.map": "/Shops/static/js/542.09fd32fc.chunk.js.map"
+    "542.9f7e5032.chunk.js.map": "/Shops/static/js/542.9f7e5032.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.232c1320.css",
-    "static/js/main.cfc2f17f.js"
+    "static/css/main.991d08d2.css",
+    "static/js/main.b1a7881a.js"
   ]
 }
