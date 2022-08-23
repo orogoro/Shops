@@ -2,7 +2,17 @@ import { Link } from 'react-router-dom';
 
 import styles from './OptionItem.module.scss';
 
-function OptionItem({ image, title, text, price, name, active, id, isActive }) {
+function OptionItem({
+  image,
+  title,
+  text,
+  price,
+  name,
+  active,
+  id,
+  isActive,
+  number,
+}) {
   const onActive = () => {
     isActive(id);
   };
@@ -30,7 +40,7 @@ function OptionItem({ image, title, text, price, name, active, id, isActive }) {
           <div className={styles.main}>{title}</div>
           <div className={styles.sub}>{text}</div>
         </div>
-        <Link className={styles.button} to="/Shops">
+        <Link className={styles.button} to={`/Shops/${number}`}>
           Go to shops
         </Link>
       </div>

@@ -18,7 +18,7 @@ function SliderCard() {
     <div className={styles.container}>
       <h2 className={styles.title}>Popular dishes</h2>
       <div className={styles.options}>
-        {items.map(({ id, name, title, src, text, price }) => (
+        {items.map(({ id, name, title, src, text, price, number }) => (
           <OptionItem
             active={activeId === id}
             id={id}
@@ -29,6 +29,7 @@ function SliderCard() {
             name={name}
             key={id}
             isActive={currentId}
+            number={number}
           />
         ))}
       </div>
