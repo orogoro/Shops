@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 
-import { SpinerBtn } from '..';
+import { SpinerBtn } from '../..';
 
 import styles from './ShoppingCartForm.module.scss';
 

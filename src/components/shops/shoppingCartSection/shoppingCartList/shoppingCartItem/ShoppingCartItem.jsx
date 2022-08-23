@@ -2,12 +2,13 @@ import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 import * as action from 'redux/slice';
-import cross from '../../../image/cross.png';
+
+import cross from '../../../../../image/cross.png';
 
 import styles from './ShoppingCartItem.module.scss';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ShoppingCartItem({ name, price, id, counter, src }) {
   const [totalPrice, setTotalPrice] = useState(price);

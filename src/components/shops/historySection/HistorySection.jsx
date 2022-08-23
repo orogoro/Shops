@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { useSelector } from 'react-redux';
 
 import { getOrdersItems } from 'redux/selectors';
-import { HistoryFilter, HistoryList } from '..';
+import { HistoryFilter, HistoryList } from './';
 
 import leaf from '../../../image/leaf.png';
 

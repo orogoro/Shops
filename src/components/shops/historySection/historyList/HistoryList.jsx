@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { HistoryItem } from '..';
+import HistoryItem from './historyItem/HistoryItem';
 
 import styles from './HistoryList.module.scss';
 

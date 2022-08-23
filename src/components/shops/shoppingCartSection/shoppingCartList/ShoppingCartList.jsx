@@ -1,7 +1,8 @@
 import { useSelector } from 'react-redux';
 
-import { ShoppingCartItem } from '..';
+import ShoppingCartItem from './shoppingCartItem/ShoppingCartItem';
 import { getCartsItems } from 'redux/selectors';
+
 import styles from './ShoppingCartList.module.scss';
 
 function ShoppingCartList() {

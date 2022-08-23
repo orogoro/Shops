@@ -7,7 +7,9 @@ const Shops = lazy(() => import('../pages/shops/Shops'));
 const ShoppingCart = lazy(() => import('../pages/shoppingCart/ShoppingCart'));
 const History = lazy(() => import('../pages/history/History'));
 const Home = lazy(() => import('../pages/homePage/HomePage'));
-const ShopsMenu = lazy(() => import('./shops/shopsMenu/ShopsMenu'));
+const ShopsMenuList = lazy(() =>
+  import('./shops/shopsSection/shopsMenuList/ShopsMenuList')
+);
 
 export const App = () => {
   return (
@@ -17,7 +19,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="Shops" element={<Shops />}>
-            <Route path="Shops/:itemId" element={<ShopsMenu />} />e
+            <Route path=":itemId" element={<ShopsMenuList />} />e
           </Route>
           <Route path="Shopping_cart" element={<ShoppingCart />} />
           <Route path="History" element={<History />} />

@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import Notiflix from 'notiflix';
 import { nanoid } from 'nanoid';
 
-import { ShoppingCartForm, ShoppingCartList } from '..';
 import { getCartsItems } from 'redux/selectors';
 import * as action from 'redux/slice';
+import { ShoppingCartForm, ShoppingCartList } from './';
 
 import cart from '../../../image/shopping-cart.png';
 

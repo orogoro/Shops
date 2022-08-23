@@ -1,5 +1,6 @@
-import { ShopsItem } from '..';
-import menu from '../../../helper/shops.json';
+import ShopsItem from './shopsItem/ShopsItem';
+
+import menu from '../../../../helper/shops.json';
 
 import styles from './ShopsList.module.scss';
 

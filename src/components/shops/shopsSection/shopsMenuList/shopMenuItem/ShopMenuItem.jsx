@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { SpinerBtn } from '..';
+import { SpinerBtn } from '../../..';
 
-import * as action from '../../../redux/slice';
+import * as action from '../../../../../redux/slice';
 
-import styles from './MenuItem.module.scss';
+import styles from './ShopMenuItem.module.scss';
 
-function MenuItem({ name, price, src }) {
+function ShopMenuItem({ name, price, src }) {
   const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
 
@@ -49,9 +49,9 @@ function MenuItem({ name, price, src }) {
   );
 }
 
-export default MenuItem;
+export default ShopMenuItem;
 
-MenuItem.propTypes = {
+ShopMenuItem.propTypes = {
   name: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
