@@ -55,6 +55,17 @@ function Footer() {
           </li>
         </ul>
       </div>
+      <div className={styles.container3}>
+        <p className={styles.title}>Libraries that I used for this project :</p>
+        <ul className={styles.list}>
+          <li className={styles.item}>React,</li>
+          <li className={styles.item}>React Router,</li>
+          <li className={styles.item}>Redux,</li>
+          <li className={styles.item}>Redux Persist,</li>
+          <li className={styles.item}>Redux Toolkit,</li>
+          <li className={styles.item}>React hook form</li>
+        </ul>
+      </div>
     </div>
   );
 }

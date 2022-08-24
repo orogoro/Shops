@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  justify-content: space-between;
   position: relative;
   padding: 50px 100px 100px;
   background-color: #32383d;
@@ -70,6 +71,32 @@
 
 .container2 {
   margin-left: 200px;
+}
+
+.container3 {
+  margin-left: 200px;
+  width: 300px;
+}
+
+.title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.item {
+  color: #fff;
+  padding: 1px;
+  & + & {
+    margin-left: 3px;
+  }
 }
 
 .listIcon {

@@ -1,0 +1,24 @@
+.item {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #fff;
+  background-color: #63ba76;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #2ea32c;
+  }
+
+  & + & {
+    margin-left: 20px;
+  }
+}
+
+.active {
+  background-color: #2ea32c;
+}

@@ -2,11 +2,9 @@ import { useParams } from 'react-router-dom';
 
 import MenuItem from './menuItem/MenuItem';
 
-import menuItems from '../../../../helper/shops.json';
-
 import styles from './MenuList.module.scss';
 
-function MenuList() {
+function MenuList({ menuItems }) {
   const { itemId } = useParams();
 
   return (

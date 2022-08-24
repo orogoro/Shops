@@ -1,10 +1,8 @@
 import ShopsItem from './shopsItem/ShopsItem';
 
-import menu from '../../../../helper/shops.json';
-
 import styles from './ShopsList.module.scss';
 
-function ShopsList() {
+function ShopsList({ menu }) {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}> Shops :</h2>

@@ -3,6 +3,7 @@
     "id": "1",
     "link": "McDonny",
     "name": "Mc Donny",
+    "category": "Street food",
     "image": "https://kartinkin.net/uploads/posts/2021-04/1617244877_53-p-fon-restoran-krasivo-56.jpg",
     "menu": [
       {
@@ -47,6 +48,7 @@
     "id": "2",
     "link": "CFS",
     "name": "CFS",
+    "category": "Healthy food",
     "image": "https://kartinkin.net/uploads/posts/2021-07/thumbs/1627136610_20-kartinkin-com-p-bar-zadnii-fon-krasivo-21.jpg",
     "menu": [
       {
@@ -91,6 +93,7 @@
     "id": "3",
     "link": "Dziodzi",
     "name": "Dziodzi",
+    "category": "Chinese food",
     "image": "https://4-chemodan.com.ua/wp-content/uploads/2018/12/18-11-01-v013_blur.jpg",
     "menu": [
       {
@@ -135,6 +138,7 @@
     "id": "4",
     "link": "PussatoHuto",
     "name": "Pussato Huto",
+    "category": "Pizza",
     "image": "https://mc.today/wp-content/uploads/2020/12/photo_2020-12-17_13-44-31.jpg",
     "menu": [
       {
