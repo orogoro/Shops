@@ -1,5 +1,9 @@
 .header {
   background-color: #f2f2f2;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 20px 10px;
+  }
 }
 
 .nav {
@@ -19,8 +23,28 @@
 }
 
 .container {
-  display: flex;
+  display: none;
   align-items: center;
+
+  @media screen and (min-width: 500px) {
+    display: flex;
+  }
+}
+
+.burger {
+  margin-left: auto;
+  @media screen and (min-width: 500px) {
+    display: none;
+  }
+}
+
+.button {
+  border: none;
+  z-index: 1;
+}
+
+.imgB {
+  width: 27px;
 }
 
 .link {

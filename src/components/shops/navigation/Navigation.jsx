@@ -1,9 +1,14 @@
-import React from 'react';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+
+import mobileBurger from '../../../image/mobileBurger.png';
+
+import MobileModal from './mobileModal/MobileModal';
 
 import styles from './Navigation.module.scss';
 
 function Navigation() {
+  const [modalActive, setModalActive] = useState(false);
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -51,7 +56,20 @@ function Navigation() {
             History
           </NavLink>
         </div>
+        <div className={styles.burger}>
+          <button
+            className={styles.button}
+            onClick={() => setModalActive(true)}
+          >
+            <img
+              className={styles.imgB}
+              src={mobileBurger}
+              alt="mobileBurger"
+            />
+          </button>
+        </div>
       </nav>
+      <MobileModal active={modalActive} setActive={setModalActive} />
     </header>
   );
 }
