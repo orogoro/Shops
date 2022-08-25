@@ -9,4 +9,9 @@
     width: 74%;
     margin-left: 15px;
   }
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    margin: 0 10px;
+  }
 }

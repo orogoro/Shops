@@ -6,7 +6,7 @@
     padding: 50px 70px 150px;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 400px) {
     padding: 50px 10px 100px;
   }
 }
@@ -20,7 +20,7 @@
   font-size: 40px;
   color: #fff;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 400px) {
     font-size: 30px;
   }
 }
@@ -31,7 +31,7 @@
   margin: 0 auto;
   justify-content: space-between;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 400px) {
     flex-wrap: wrap;
     justify-content: center;
   }

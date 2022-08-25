@@ -9,7 +9,7 @@
     padding: 50px 100px 50px;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 400px) {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -85,7 +85,7 @@
     width: 200px;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 400px) {
     margin-top: 30px;
   }
 }
@@ -93,7 +93,7 @@
 .container3 {
   width: 300px;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 400px) {
     margin-top: 30px;
     width: 200px;
   }

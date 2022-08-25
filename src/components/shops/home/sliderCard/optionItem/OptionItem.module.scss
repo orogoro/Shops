@@ -28,7 +28,7 @@
       width: 348px;
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 400px) {
       width: 300px;
       // margin-top: 40px;
     }
@@ -37,7 +37,7 @@
       display: block;
       margin-left: 70px;
 
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 400px) {
         margin-left: 10px;
       }
     }
@@ -84,7 +84,7 @@
 
     background-size: auto 100%;
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 400px) {
       flex-grow: 80;
     }
 
@@ -103,7 +103,7 @@
     }
 
     & > div > .button {
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 400px) {
         display: flex;
         align-items: center;
       }
@@ -114,7 +114,7 @@
     flex-grow: 1;
     border-radius: 30px;
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 400px) {
       flex-grow: 12;
     }
 
@@ -128,7 +128,7 @@
       bottom: 10px;
       left: 10px;
 
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 400px) {
         bottom: 5px;
         left: 5px;
       }
@@ -150,7 +150,7 @@
 
     transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 400px) {
       height: 90px;
     }
   }
@@ -207,7 +207,7 @@
         font-weight: bold;
         font-size: 1.2rem;
 
-        @media screen and (max-width: 360px) {
+        @media screen and (max-width: 400px) {
           font-size: 1rem;
         }
       }
@@ -219,7 +219,7 @@
           width: 120px;
         }
 
-        @media screen and (max-width: 360px) {
+        @media screen and (max-width: 400px) {
           font-size: 0.8rem;
           width: 100px;
         }
@@ -243,7 +243,7 @@
         white-space: pre;
       }
 
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 400px) {
         display: none;
         padding: 3px 8px;
         font-size: 14px;

@@ -11,6 +11,11 @@
     width: 52%;
     margin-left: 15px;
   }
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    margin: 20px 10px;
+  }
 }
 
 .item {
@@ -23,6 +28,10 @@
 
   @media screen and (max-width: 768px) {
     height: 170px;
+  }
+
+  @media screen and (max-width: 400px) {
+    height: 140px;
   }
 
   & + & {

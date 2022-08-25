@@ -13,6 +13,10 @@
     margin-left: 10px;
     width: 22%;
   }
+
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
 }
 
 .title {

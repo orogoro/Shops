@@ -2,6 +2,10 @@
   display: flex;
   max-width: 1200px;
   margin: 10px auto;
+
+  @media screen and (max-width: 400px) {
+    flex-wrap: wrap;
+  }
 }
 
 .cart_container {
@@ -9,12 +13,20 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+
+  @media screen and (max-width: 400px) {
+    margin-top: 20px;
+  }
 }
 .cart {
   width: 400px;
 
   @media screen and (max-width: 768px) {
     width: 300px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 200px;
   }
 }
 
