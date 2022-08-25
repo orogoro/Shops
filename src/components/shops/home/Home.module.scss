@@ -8,6 +8,14 @@
   bottom: -50px;
   width: 100%;
   z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    bottom: -30px;
+  }
+
+  @media screen and (max-width: 360px) {
+    bottom: -10px;
+  }
 }
 
 .img2 {
@@ -16,4 +24,8 @@
   bottom: -50px;
   width: 100%;
   z-index: 1;
+
+  @media screen and (max-width: 360px) {
+    bottom: -20px;
+  }
 }

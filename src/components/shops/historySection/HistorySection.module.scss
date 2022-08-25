@@ -1,6 +1,9 @@
 .container {
-  margin: 10px 20px;
-  padding: 10px 20px;
+  padding: 20px 30px;
+
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+  }
 }
 
 .img {

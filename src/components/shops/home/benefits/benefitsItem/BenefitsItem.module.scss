@@ -5,6 +5,16 @@
   text-align: center;
   width: 300px;
   list-style: none;
+
+  @media screen and (max-width: 768px) {
+    width: 200px;
+  }
+
+  @media screen and (max-width: 360px) {
+    & + & {
+      margin-top: 30px;
+    }
+  }
 }
 
 // .containerImg {
@@ -22,6 +32,11 @@
   border-radius: 50%;
   margin-bottom: 25px;
   box-shadow: 0 0px 10px 5px rgb(255 255 255 / 70%);
+
+  @media screen and (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .title {
@@ -29,6 +44,10 @@
   color: #fff;
   font-weight: 700;
   margin-bottom: 15px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .text {
@@ -37,4 +56,8 @@
   outline: 1px;
   line-height: 20px;
   color: #fff;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 }

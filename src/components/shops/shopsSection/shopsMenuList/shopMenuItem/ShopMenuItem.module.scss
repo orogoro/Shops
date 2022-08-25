@@ -1,5 +1,9 @@
 .img {
   width: 260px;
+
+  @media screen and (max-width: 768px) {
+    width: 130px;
+  }
 }
 
 .name {
@@ -7,6 +11,10 @@
   font-weight: 500;
   margin: 20px 0 10px;
   margin-right: auto;
+
+  @media screen and (max-width: 768px) {
+    font-size: 17px;
+  }
 
   & + & {
     margin: 10px 0;
@@ -22,9 +30,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 140px;
+  padding: 12px 30px;
+  width: 150px;
   height: 40px;
-  padding: 10px 30px;
   font-size: 15px;
   font-weight: 700;
   border: 0px solid transparent;
@@ -36,6 +44,13 @@
   //   box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
   transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    padding: 8px 12px;
+    font-size: 13px;
+    width: 100px;
+    height: 35px;
+  }
 
   &:disabled {
     background-color: #a3d9ff;

@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
   margin: 10px auto;
 }
 
@@ -12,6 +12,10 @@
 }
 .cart {
   width: 400px;
+
+  @media screen and (max-width: 768px) {
+    width: 300px;
+  }
 }
 
 .link {

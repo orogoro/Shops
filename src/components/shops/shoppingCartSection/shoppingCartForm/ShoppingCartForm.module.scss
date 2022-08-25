@@ -3,6 +3,11 @@
   border-radius: 4px;
   // box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.291);
   height: 100%;
+
+  @media screen and (max-width: 768px) {
+    width: 40%;
+    margin-left: 10px;
+  }
 }
 
 .container_total {
@@ -13,6 +18,10 @@
   margin-top: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid #000;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+  }
 }
 
 .text {
@@ -60,6 +69,10 @@
   flex-direction: column;
   margin: 0 auto;
   width: 65%;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
 }
 
 .lable {

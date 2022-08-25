@@ -8,6 +8,10 @@
   background-color: #63ba76;
   box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
 
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
+
   cursor: pointer;
 
   &:hover {
@@ -16,6 +20,10 @@
 
   & + & {
     margin-left: 20px;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 15px;
+    }
   }
 }
 

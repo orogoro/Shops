@@ -1,21 +1,38 @@
 .container {
   padding: 100px 0 300px;
   background-color: #4b99e3;
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 70px 150px;
+  }
+
+  @media screen and (max-width: 360px) {
+    padding: 50px 10px 100px;
+  }
 }
 
 .title {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  // width: 400px;
   margin: 0 auto 50px;
   font-size: 40px;
   color: #fff;
+
+  @media screen and (max-width: 360px) {
+    font-size: 30px;
+  }
 }
 
 .list {
   display: flex;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   justify-content: space-between;
+
+  @media screen and (max-width: 360px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

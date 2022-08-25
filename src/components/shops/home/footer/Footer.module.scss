@@ -4,6 +4,15 @@
   position: relative;
   padding: 50px 100px 100px;
   background-color: #32383d;
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 100px 50px;
+  }
+
+  @media screen and (max-width: 360px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .logo {
@@ -70,12 +79,24 @@
 }
 
 .container2 {
-  margin-left: 200px;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+  }
+
+  @media screen and (max-width: 360px) {
+    margin-top: 30px;
+  }
 }
 
 .container3 {
-  margin-left: 200px;
   width: 300px;
+
+  @media screen and (max-width: 360px) {
+    margin-top: 30px;
+    width: 200px;
+  }
 }
 
 .title {
