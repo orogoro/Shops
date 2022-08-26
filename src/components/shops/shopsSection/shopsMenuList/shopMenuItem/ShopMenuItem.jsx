@@ -29,6 +29,7 @@ function ShopMenuItem({ name, price, src }) {
       dispatch(action.addFood(newFood));
       toast.success('Added to cart', {
         theme: 'colored',
+        className: styles.tost,
       });
       setLoading(false);
     }, 500);

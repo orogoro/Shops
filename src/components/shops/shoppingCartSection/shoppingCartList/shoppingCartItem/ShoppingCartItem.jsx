@@ -55,6 +55,7 @@ function ShoppingCartItem({ name, price, id, counter, src }) {
             dispatch(action.deleteFood(id));
             toast.success('Successfully removed', {
               theme: 'colored',
+              className: styles.tost,
             });
           }}
         />
