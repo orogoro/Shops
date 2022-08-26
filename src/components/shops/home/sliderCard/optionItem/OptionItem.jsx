@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { Link } from 'react-router-dom';
 
 import styles from './OptionItem.module.scss';
@@ -49,4 +51,15 @@ function OptionItem({
 }
 
 export default OptionItem;
-//  to={`Shops/${link}`}
+
+OptionItem.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  active: PropTypes.bool.isRequired,
+  id: PropTypes.string.isRequired,
+  isActive: PropTypes.func.isRequired,
+  number: PropTypes.string.isRequired,
+};

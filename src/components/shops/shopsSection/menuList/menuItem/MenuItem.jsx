@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import { Loader } from '../../../';
 
@@ -23,3 +24,10 @@ function MenuItem({ id, title, image, active }) {
 }
 
 export default MenuItem;
+
+MenuItem.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  active: PropTypes.bool.isRequired,
+};

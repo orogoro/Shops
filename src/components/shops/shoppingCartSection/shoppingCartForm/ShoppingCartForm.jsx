@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
+import PropTypes from 'prop-types';
 
 import { SpinerBtn } from '../..';
 
@@ -143,3 +144,18 @@ function ShoppingCartForm({ onSubmit, total, loading, items }) {
 }
 
 export default ShoppingCartForm;
+
+ShoppingCartForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+  total: PropTypes.number.isRequired,
+  loading: PropTypes.bool.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      src: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      price: PropTypes.string.isRequired,
+      counter: PropTypes.number.isRequired,
+    })
+  ),
+};

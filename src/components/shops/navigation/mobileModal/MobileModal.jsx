@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { NavLink } from 'react-router-dom';
 
 import corseMobile from '../../../../image/corseMobile.png';
@@ -65,3 +67,8 @@ function MobileModal({ active, setActive }) {
 }
 
 export default MobileModal;
+
+MobileModal.propTypes = {
+  setActive: PropTypes.func.isRequired,
+  active: PropTypes.bool.isRequired,
+};

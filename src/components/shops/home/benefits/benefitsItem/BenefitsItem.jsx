@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './BenefitsItem.module.scss';
 
 function BenefitsItem({ image, title, text }) {
@@ -11,3 +13,9 @@ function BenefitsItem({ image, title, text }) {
 }
 
 export default BenefitsItem;
+
+BenefitsItem.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};

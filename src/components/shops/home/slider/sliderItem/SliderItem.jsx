@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './SliderItem.scss';
 
 function SliderItem({ image, title, description }) {
@@ -18,3 +20,9 @@ function SliderItem({ image, title, description }) {
 }
 
 export default SliderItem;
+
+SliderItem.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};

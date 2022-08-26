@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import FilterCategoryItem from './filterCategoryItem/FilterCategoryItem';
 
@@ -39,3 +40,24 @@ function FilterCategory({ filterItems, onCategory }) {
 }
 
 export default FilterCategory;
+
+FilterCategory.propTypes = {
+  onCategory: PropTypes.func.isRequired,
+  filterItems: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
+      category: PropTypes.string.isRequired,
+      menu: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.string.isRequired,
+          src: PropTypes.string.isRequired,
+          name: PropTypes.string.isRequired,
+          price: PropTypes.string.isRequired,
+        })
+      ),
+    })
+  ),
+};
